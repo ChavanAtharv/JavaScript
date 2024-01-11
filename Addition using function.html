@@ -1,15 +1,13 @@
 <html>
 <body>
-	<script language="javascript" type="text/javascript">
-		var a=10,b=5;		//global variable
-		function Addition()
+	<script langauge="javascript" type="text/javascript">
+		function Addition(a,b)		
 		{
-			var c;			//local variable
-			document.write("Addition of two numbers="+c);
-			c=a+b;
+			var c=a+b;
+			return(c);
 			document.write("Addition of two numbers="+c);
 		}
-		Addition();
+		Addition(100,200);
 	</script>
 </body>
 </html>
