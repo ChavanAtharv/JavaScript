@@ -1,0 +1,15 @@
+<html>
+<body>
+	<input type="button" name="b1" value="Web Page Protection" onclick="Display()">
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			document.addEventListener("contextmenu", function(e) 
+			{
+			alert("Right-click is disabled on this page to protect the content.");
+			e.preventDefault();
+			}); 
+		}
+	</script>
+</body>
+</html>

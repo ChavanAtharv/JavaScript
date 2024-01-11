@@ -1,0 +1,27 @@
+<html>
+<body>
+	<input type="button" name="b1" value="Open Window" onclick="CreateWindow()">
+	<input type="button" name="b2" value="Close Window" onclick="CloseWindow()">
+	<input type="button" name="b3" value="Focus Window" onclick="FocusWindow()">
+	<input type="button" name="b4" value="Blur Window" onclick="BlurWindow()">
+	<script language="javascript" type="text/javascript">
+		var newWindow;
+		function CreateWindow()
+		{
+			newWindow=window.open("https://www.vjtechacademy.in","newWindow","width=500,height=500,toolbar=yes,scrollbar=yes,resizable=yes");
+		}
+		function CloseWindow()
+		{
+			newWindow.close();
+		}
+		function FocusWindow()
+		{
+			newWindow.focus();
+		}
+		function BlurWindow()
+		{
+			newWindow.blur();
+		}
+	</script>
+</body>
+</html>

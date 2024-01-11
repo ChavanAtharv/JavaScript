@@ -1,0 +1,12 @@
+<html>
+<body>
+	<input type="button" name="b1" value="Change Contents" onclick="Display()">
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			newWindow=window.open("https://www.vjtechacademy.in","newWindow","width=500,height=500,toolbar=yes,scrollbar=yes,resizable=yes");
+			newWindow.document.write("<h1>Child window contents changed</h1>");
+		}
+	</script>
+</body>
+</html>

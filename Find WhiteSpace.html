@@ -1,0 +1,16 @@
+<html>
+<body>
+	Enter any text:<br>
+	<input type="text" id="tf1"><br><br>
+	<input type="button" name="b1" value="Find WhiteSpace" onclick="FindWhiteSpace()">
+	<script language="javascript" type="text/javascript">
+		function FindWhiteSpace()
+		{
+			var str=document.getElementById("tf1").value;
+			var pattern=/\s/gmi;
+			var result=pattern.test(str);
+			alert("WhiteSpace Found?:"+result);
+		}
+	</script>
+</body>
+</html>

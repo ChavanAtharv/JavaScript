@@ -1,0 +1,38 @@
+<html>
+<body>
+	<center>
+		<h1> This is Banner</h1>
+		<img src="vjtech.png" id="img1" width="50%" height="50%"> <br><br>
+		<input type="button" name="b1" value="Display Banner" onclick="Display()">
+	</center>
+
+	<script language="javascript" type="text/javascript">
+		var i=0;
+		var banner=new Array("clang.png","cpp.png","java.png","advjava.png","css.png")
+		var timerid=null;
+		function Display()
+		{
+			if(timerid==null)
+			{
+					timerid=setInterval("Display_Banner()",1000);
+			}
+		}
+		function Display_Banner()
+		{
+			if(i<banner.length)
+			{
+				document.getElementById("img1").src=banner[i];
+				i++;
+			}
+			else
+			{
+				clearInterval(timerid);
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,38 @@
+
+<html>
+<head>
+	 <script language="javascript" type="text/javascript">
+		 function display() 
+		 {
+			if(document.forms.VJTech.interest.value == 1) 
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("PUBG", 1);
+				document.forms.VJTech.optionList[1] = new Option("Call Of Duty", 2);
+				document.forms.VJTech.optionList[2] = new Option("Free Fire", 3);
+				document.forms.VJTech.optionList[3] = new Option("Clash Of Clans", 4);
+			}
+			else 
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("C", 1);
+				document.forms.VJTech.optionList[1] = new Option("C++", 2);
+				document.forms.VJTech.optionList[2] = new Option("Java", 3);
+				document.forms.VJTech.optionList[3] = new Option("JavaScript", 4);
+			}
+		 }
+	 </script>
+</head>
+<body>
+	<form name="VJTech">
+		<select name="optionList">
+			<option value="1">NONE</option>
+		</select> <br><br>
+		
+		<input type="radio" name="interest" value="1"
+		onclick="display()"> Gaming <br>
+		<input type="radio" name="interest" value="2"
+		onclick="display()"> Programming <br> <br>
+	 </form>
+</body>
+</html> 

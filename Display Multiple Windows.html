@@ -1,0 +1,17 @@
+<html>
+<body>
+	<input type="button" name="b1" value="Open 5 Window" onclick="Display()">
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			for(i=1;i<=5;i++)
+			{
+				var myWindow = window.open("", "newWindow"+i,
+"width=300,height=300,toolbar=yes,scrollbars=yes,resizable=yes,left="+(i*100)
++",top="+(i*100)); 
+				myWindow.document.write("<p>This is a new window</p>"+i); 
+			}
+		}
+	</script>
+</body>
+</html>

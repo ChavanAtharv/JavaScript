@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			var str=document.forms.vjtech.tf1.value+" "+document.forms.vjtech.tf2.value;
+			document.forms.vjtech.tf3.value=str;
+			alert(document.forms.vjtech.tf3.value);
+		}
+	</script>
+</head>
+<body>
+	<form name="vjtech">
+		Enter First Name:<input type="text" name="tf1">
+		Enter Last Name:<input type="text" name="tf2">
+		Your Full Name:<input type="hidden" name="tf3"><br><br>
+		<input type="button" name="b1" value="Submit" onclick="Display()">
+	</form>
+</body>
+</html>

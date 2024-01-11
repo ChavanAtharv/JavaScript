@@ -1,0 +1,19 @@
+<html>
+<body>
+	<form name="vjtech">
+		Enter userName:<br>
+		<input type="text" id="tf1"><br>
+		Enter Password:<br>
+		<input type="password" id="tf2"><br>
+		<input type="submit" id="b1" value="Login" onclick="Display()">
+	</form>
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			var un=document.getElementById("tf1").value;
+			var psw=document.getElementById("tf2").value;
+			alert("Your UserName:"+un+" and password:"+psw);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<body>
+	<h1>This is Frame-1</h1><br>
+	<input type="button" id="b1" value="Send Data" onclick="Display()">
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			parent.frame2.document.getElementById("tf1").value="Dennis";
+			parent.frame2.document.getElementById("tf2").value="9898989898";
+			parent.frame2.focus();
+		}
+	</script>
+</body>
+</html>

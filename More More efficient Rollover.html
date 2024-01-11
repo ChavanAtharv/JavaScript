@@ -1,0 +1,40 @@
+<html>
+<body>
+	<table border="1" width="40%" height="150px">
+		<tr>
+			<th>Book Name</th>
+			<th>Author Name</th>
+			<th>Book Price</th>
+		</tr>
+		<tr>
+			<td onmouseover="display1()">C Programming</td>
+			<td>Dennis</td>
+			<td id="p1">***</td>
+		</tr>
+		<tr>
+			<td onmouseover="display2()">C++ Programming</td>
+			<td>Bajrne</td>
+			<td id="p2">***</td>
+		</tr>
+		<tr>
+			<td onmouseover="display3()">Java Programming</td>
+			<td>James</td>
+			<td id="p3">***</td>
+		</tr>
+	</table>
+	<script language="javascript" type="text/javascript">
+		function display1()
+		{
+			document.getElementById("p1").innerHTML=250;
+		}
+		function display2()
+		{
+			document.getElementById("p2").innerHTML=350;
+		}
+		function display3()
+		{
+			document.getElementById("p3").innerHTML=450;
+		}
+	</script>
+</body>
+</html>

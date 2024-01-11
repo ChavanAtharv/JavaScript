@@ -1,0 +1,18 @@
+<html>
+<body>
+	Enter Cookie Name:<br>
+	<input type="text" id="tf1"><br><br>
+	Enter Cookie Value:<br>
+	<input type="text" id="tf2"><br><br>
+	<input type="button" name="b1" value="Create Cookie" onclick="setCookie()">
+	<script language="javascript" type="text/javascript">
+		function setCookie()
+		{
+			var key=document.getElementById("tf1").value;
+			var value=document.getElementById("tf2").value;		
+			document.cookie=key+"="+value+";expires=Mon,18 Dec 2022 12:00:00 UTC; path=/";
+			alert("Cookie Created Successfully");
+		}
+	</script>
+</body>
+</html>

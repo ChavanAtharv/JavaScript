@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			var str="Your Favourite Language:";
+			if(document.forms.vjtech.c1.checked)
+			{
+				str+=document.forms.vjtech.c1.value+",";
+			}
+			if(document.forms.vjtech.c2.checked)
+			{
+				str+=document.forms.vjtech.c2.value+",";
+			}
+			if(document.forms.vjtech.c3.checked)
+			{
+				str+=document.forms.vjtech.c3.value+",";
+			}
+			if(document.forms.vjtech.c4.checked)
+			{
+				str+=document.forms.vjtech.c4.value+",";
+			}
+			alert(str);
+		}
+	</script>
+</head>
+<body>
+	<form name="vjtech">
+		Choose Favourite Language:
+		<input type="checkbox" name="c1" value="C Lang">C Lang</input>
+		<input type="checkbox" name="c2" value="C++ Lang">C++ Lang</input>
+		<input type="checkbox" name="c3" value="Java Lang">Java Lang</input>
+		<input type="checkbox" name="c4" value="JavaScript">JavaScript</input><br><br>
+		<input type="button" name="b1" value="Display" onclick="Display()">
+	</form>
+</body>
+</html>

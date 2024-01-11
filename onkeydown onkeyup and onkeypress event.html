@@ -1,0 +1,25 @@
+<html>
+<head>
+	 <script language="javascript" type="text/javascript">
+		 function keyDownEvent()
+		 {
+			 document.vjtech.b1.value = "Current Event : Key Down";
+		 }
+		 function keyPressEvent()
+		 {
+			document.vjtech.b1.value = "Current Event : Key Press";
+		 }
+		 function keyUpEvent()
+		 {
+			document.vjtech.b1.value = "Current Event : Key Up";
+		 }
+	 </script>
+</head>
+<body>
+ <form name="vjtech">
+	 <input type="text" name="tf1" onkeydown="keyDownEvent()" 
+	 onkeypress="keyPressEvent()" onkeyup="keyUpEvent()">
+	 <input type="button" name="b1" value="Current Event : None">
+ </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+ <script language="javascript" type="text/javascript">
+
+	 function Display() 
+	 {
+		 var str = "Your Favorite Coding Language Is : ";
+		 for (var i = 0; i < document.forms.vjtech.c.length; i++) 
+		 {
+			 if (document.forms.vjtech.c[i].checked) 
+			 {
+				str = str + document.vjtech.c[i].value + ", ";
+			 }
+		 }
+		 alert(str);
+	 }
+ </script>
+</head> 
+<body>
+	<form name="vjtech">
+		Choose Favourite Language:
+		<input type="checkbox" name="c" value="C Lang">C Lang</input>
+		<input type="checkbox" name="c" value="C++ Lang">C++ Lang</input>
+		<input type="checkbox" name="c" value="Java Lang">Java Lang</input>
+		<input type="checkbox" name="c" value="JavaScript">JavaScript</input><br><br>
+		<input type="button" name="b1" value="Display" onclick="Display()">
+	</form>
+</body>
+</html>

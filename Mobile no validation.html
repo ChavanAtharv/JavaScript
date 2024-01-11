@@ -1,0 +1,19 @@
+<html>
+<body>
+	Enter Mobile No:<br>
+	<input type="text" id="tf1"><br><br>
+	<input type="button" name="b1" value="Validate Mobile" onclick="VerifyMobileNo()">
+	<script language="javascript" type="text/javascript">
+		function VerifyMobileNo()
+		{
+			var str=document.getElementById("tf1").value;
+			var pattern=/^[0-9]{10}$/gmi;
+			var result=pattern.test(str);
+			if(result)
+				alert("Mobile no is valid");
+			else
+				alert("Mobile no is invalid");
+		}
+	</script>
+</body>
+</html>

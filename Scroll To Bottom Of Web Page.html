@@ -1,0 +1,16 @@
+<html>
+<body>
+	<input type="button" name="b1" value="Scroll TO Bottom" onclick="Display()">
+	<p id="d1"></p>
+	<script language="javascript" type="text/javascript">
+		for(i=1;i<=100;i++)
+		{
+			document.getElementById("d1").innerHTML+="This is Line no:"+i+"<br>";
+		}
+		function Display()
+		{
+			window.scrollTo(0, document.body.scrollHeight);
+		}
+	</script>
+</body>
+</html>

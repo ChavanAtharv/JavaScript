@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function Highlightemail()
+		{
+			var str=document.forms.vjtech.tf3.value;
+			if(str.indexOf('@')>0&&str.indexOf('.')>0)
+			{
+				document.forms.vjtech.tf3.style.backgroundColor="yellow";
+			}
+			else
+			{
+				document.forms.vjtech.tf3.style.backgroundColor="red";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="vjtech">
+		Enter First Name:<input type="text" name="tf1"><br><br>
+		Enter Last Name:<input type="text" name="tf2"><br><br>
+		Enter Email ID:<input type="email" name="tf3" onchange="Highlightemail()"><br><br>
+		<input type="button" name="b1" value="Submit">
+	</form>
+</body>
+</html>

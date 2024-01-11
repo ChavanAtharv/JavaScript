@@ -1,0 +1,19 @@
+<html>
+<body>
+	<form name="vjtech">
+		Enter Number:
+		<input type="text" id="tf1">
+		<input type="button" id="b1" value="CheckEvenODD" onclick="Display()">
+	</form>
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			var no=parseInt(document.getElementById("tf1").value);
+			if(no%2==0)
+				alert("Number is EVEN");
+			else
+				alert("Number is ODD");
+		}
+	</script>
+</body>
+</html>

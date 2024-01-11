@@ -1,0 +1,16 @@
+<html>
+<body>
+	Enter any text:<br>
+	<input type="text" id="tf1"><br><br>
+	<input type="button" name="b1" value="Find Non-Match" onclick="FindNonMatch()">
+	<script language="javascript" type="text/javascript">
+		function FindNonMatch()
+		{
+			var str=document.getElementById("tf1").value;
+			var pattern=/[^a-z]/gmi;
+			var result=str.match(pattern);
+			alert("Non-Matching Characters:"+result);
+		}
+	</script>
+</body>
+</html>

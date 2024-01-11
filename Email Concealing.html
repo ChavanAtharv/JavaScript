@@ -1,0 +1,27 @@
+<html>
+<body>
+	Enter Email ID:<br>
+	<input type="email" id="tf1"><br><br>
+	<input type="button" name="b1" value="Hide Email" onclick="Display()">
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			email=document.getElementById("tf1").value;
+			//email="vjtechacademy@gmail.com"
+			if(email=="")
+			{
+				alert("Please enter email id");
+			}
+			else
+			{
+				splitted=email.split("@");
+				part1=splitted[0];	//part1=vjtechacademy
+				part2=splitted[1];	//part2=gmail.com
+				str1=part1.substring(0,part1.length/2);
+				result=str1+"****@"+part2;
+				alert("Hide Email Address:"+result);
+			}
+		}
+	</script>
+</body>
+</html>

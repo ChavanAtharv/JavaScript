@@ -1,0 +1,57 @@
+<html>
+<head>
+	 <script language="javascript" type="text/javascript">
+		 function display() 
+		 {
+			if(document.forms.VJTech.syllbus.value == 1) 
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("English", 1);
+				document.forms.VJTech.optionList[1] = new Option("Physics", 2);
+				document.forms.VJTech.optionList[2] = new Option("Chemistry", 3);
+				document.forms.VJTech.optionList[3] = new Option("Maths", 4);
+			}
+			else if(document.forms.VJTech.syllbus.value == 2) 
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("Maths", 1);
+				document.forms.VJTech.optionList[1] = new Option("Electrical", 2);
+				document.forms.VJTech.optionList[2] = new Option("Electronics", 3);
+				document.forms.VJTech.optionList[3] = new Option("C Lang", 4);
+			}
+			else if(document.forms.VJTech.syllbus.value == 3) 
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("DTE", 1);
+				document.forms.VJTech.optionList[1] = new Option("DSA", 2);
+				document.forms.VJTech.optionList[2] = new Option("OOP", 3);
+				document.forms.VJTech.optionList[3] = new Option("Graphics", 4);
+			}
+			else
+			{
+				document.forms.VJTech.optionList.length = 0; // clear option list
+				document.forms.VJTech.optionList[0] = new Option("Java", 1);
+				document.forms.VJTech.optionList[1] = new Option("VB.NET", 2);
+				document.forms.VJTech.optionList[2] = new Option("Microprocessor", 3);
+				document.forms.VJTech.optionList[3] = new Option("DBMS", 4);				
+			}
+		 }
+	 </script>
+</head>
+<body>
+	<form name="VJTech">
+		<select name="optionList">
+			<option value="1">NONE</option>
+		</select> <br><br>
+		
+		<input type="radio" name="syllbus" value="1"
+		onclick="display()"> Semester-1 <br>
+		<input type="radio" name="syllbus" value="2"
+		onclick="display()"> Semester-2 <br>
+		<input type="radio" name="syllbus" value="3"
+		onclick="display()"> Semester-3 <br>
+		<input type="radio" name="syllbus" value="4"
+		onclick="display()"> Semester-4 <br> <br>
+	 </form>
+</body>
+</html> 

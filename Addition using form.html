@@ -1,0 +1,22 @@
+<html>
+<body>
+	<form name="vjtech">
+		Enter First Number:<br>
+		<input type="text" id="tf1"><br>
+		Enter Second Number:<br>
+		<input type="text" id="tf2"><br>
+		Addition Result:<br>
+		<input type="text" id="tf3" value="vjtech"><br>
+		<input type="button" id="b1" value="ADD" onclick="Display()">
+	</form>
+	<script language="javascript" type="text/javascript">
+		function Display()
+		{
+			var a=parseInt(document.getElementById("tf1").value);
+			var b=parseInt(document.getElementById("tf2").value);
+			var c=a+b;
+			document.getElementById("tf3").value=c;
+		}
+	</script>
+</body>
+</html>

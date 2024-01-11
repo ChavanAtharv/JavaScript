@@ -1,0 +1,49 @@
+<html>
+<body>
+	<select id="country" onchange="LoadCities(this.value)">
+		<option value="Select Country">Select Country</option>
+		<option value="India">India</option>
+		<option value="USA">USA</option>
+	</select>
+	-----------------
+	<select id="city">
+		<option value="Select City">Select City</option>
+	</select>
+	<script language="javascript" type="text/javascript">
+		var city1=new Array("Mumbai","Pune","Solapur","Nashik");
+		var city2=new Array("New York","Paris","Chicago","Houston");
+		function LoadCities(country)
+		{
+			var city = document.getElementById("city");
+			city.innerHTML = ""; 
+			if(country=="Select Country")
+			{
+				var option=document.createElement("option");
+				option.text="Select City";
+				option.value="Select City";
+				city.appendChild(option);
+			}
+			else if(country=="India")
+			{
+				for(i=0;i<city1.length;i++)
+				{
+					var option=document.createElement("option");
+					option.text=city1[i];
+					option.value=city1[i];
+					city.appendChild(option);
+				}
+			}
+			else
+			{
+				for(i=0;i<city2.length;i++)
+				{
+					var option=document.createElement("option");
+					option.text=city2[i];
+					option.value=city2[i];
+					city.appendChild(option);
+				}				
+			}
+		}
+	</script>
+</body>
+</html>

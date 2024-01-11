@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display()
+		{
+			var name=document.getElementById("tf1").value;
+			document.getElementById("n1").innerHTML="Your Name:"+name;
+		}
+	</script>
+</head>
+<body>
+	<form name="vjtech">
+		Enter Your Name:<br><br>
+		<input type="text" id="tf1"><br><br>
+		<input type="button" name="b1" value="Submit" onclick="display()">
+		<label id="n1">Your Name:NaN</label>
+	</form>
+</body>
+</html>

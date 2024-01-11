@@ -1,0 +1,50 @@
+<html>
+<body bgcolor="orange">
+	<div>
+		Enter Key:<br><input type="text" id="tf1"><br><br>
+		Enter Value:<br><input type="text" id="tf2"><br><br>
+		<input type="button" name="b1" value="Create Cookie" onClick="SetCookie()">
+		<input type="button" name="b2" value="Read Cookie" onClick="ReadCookie()"> <br><br>	
+		<hr>
+		Your Cookies:<p id="mycookie"></p>
+		<hr>
+		<br><br>
+		<input type="button" name="b3" value="Update Cookie" onClick="UpdateCookie()">
+		<input type="button" name="b4" value="Delete Cookie" onClick="DeleteCookie()">	
+	</div>
+	<script language="javascript" type="text/javascript">
+		function SetCookie()
+		{
+			var key=document.getElementById("tf1").value;
+			var value=document.getElementById("tf2").value;
+			document.cookie=key+"="+value+";expires=Mon, 18 Dec 2023 12:00:00 UTC";
+			alert("Cookie created successfully");
+		}
+		function ReadCookie()
+		{
+			if(document.cookie)
+			{
+				var x=document.cookie;
+				document.getElementById("mycookie").innerHTML=x;
+			}
+			else
+			{
+				document.getElementById("mycookie").innerHTML="Cookie not Found";
+			}
+		}
+		function UpdateCookie()
+		{
+			var key=prompt("Enter Key:");
+			var newValue=prompt("Enter Value for Updation:");
+			document.cookie=key+"="+newValue+";";
+			alert("Cookie updated successfully");
+		}
+		function DeleteCookie()
+		{
+			var key=prompt("Enter Key:");
+			document.cookie=key+"="+";expires=Mon, 18 Dec 1970 12:00:00 UTC";
+			alert("Cookie Deleted successfully");			
+		}
+	</script>
+</body>
+</html>

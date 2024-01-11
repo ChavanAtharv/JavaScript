@@ -1,0 +1,16 @@
+<html>
+<body>
+	Enter any text:<br>
+	<input type="text" id="tf1"><br><br>
+	<input type="button" name="b1" value="Find Digit" onclick="FindMatchDigit()">
+	<script language="javascript" type="text/javascript">
+		function FindMatchDigit()
+		{
+			var str=document.getElementById("tf1").value;
+			var pattern=/[0-9]/gmi;
+			var result=str.match(pattern);
+			alert("Matching Digits:"+result);
+		}
+	</script>
+</body>
+</html>

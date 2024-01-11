@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+		function display()
+		{
+			var name=document.getElementById("tf1").value;
+			document.forms.vjtech.tf2.value="Your Name:"+name;
+		}
+	</script>
+</head>
+<body>
+	<form name="vjtech">
+		Enter Your Name:<br><br>
+		<input type="text" id="tf1" onkeyup="display()"><br><br>
+	    Result:<br><br>
+		<input type="text" id="tf2">
+	</form>
+</body>
+</html>

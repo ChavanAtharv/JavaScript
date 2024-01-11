@@ -1,0 +1,25 @@
+<html>
+<head>
+	 <script language="javascript" type="text/javascript">
+		 function display() 
+		 {
+			 var name = document.forms.VJTech.fname.value;
+			 var cname = document.forms.VJTech.cname.value;
+			 var branch = document.forms.VJTech.branch.value;
+			 alert("---------- Student Info ---------\n Name : " + name +
+			"\nCollege Name : " + cname + "\nBranch : " + branch);
+		 }
+	 </script>
+</head>
+<body>
+	 <form name="VJTech">
+		 Enter Your Name : <br>
+		 <input type="text" name="fname"><br><br>
+		 Enter College Name : <br>
+		 <input type="text" name="cname"><br><br>
+		 Enter Your Branch : <br>
+		 <input type="text" name="branch"><br><br>
+		 <input type="button" name="b1" value="Submit" onclick="display()">
+	 </form>
+</body>
+</html> 

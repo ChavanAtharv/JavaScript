@@ -1,0 +1,16 @@
+<html>
+<body>
+	Enter any text:<br>
+	<input type="text" id="tf1"><br><br>
+	<input type="button" name="b1" value="Find Character" onclick="FindMatchChar()">
+	<script language="javascript" type="text/javascript">
+		function FindMatchChar()
+		{
+			var str=document.getElementById("tf1").value;
+			var pattern=/[abc]/gmi;
+			var result=pattern.test(str);
+			alert("Matching Characters:"+result);
+		}
+	</script>
+</body>
+</html>

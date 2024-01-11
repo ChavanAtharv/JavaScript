@@ -1,0 +1,23 @@
+<html>
+<body>
+	<a href="https://www.vjtechacademy.in">VJTech Academy</a> <br>
+	<a href="https://www.google.com">Google</a> <br><br>
+	<input type="button" name="b1" Value="Go Forward" onclick="goForward()">
+	<input type="button" name="b2" value="Go Back" onclick="goBack()">
+	<input type="button" name="b3" value="Go To" onclick="goTo()">
+	<script language="javascript" type="text/javascript">	
+		function goForward()
+		{
+			window.history.forward();
+		}
+		function goBack()
+		{
+			window.history.back();
+		}
+		function goTo()
+		{	
+			window.history.go(2);
+		}
+	</script>
+</body>
+</html>
